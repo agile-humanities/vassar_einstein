@@ -44,6 +44,6 @@ class RedirectController extends ControllerBase {
   public function einsteinRedirect() {
     $message = "You have been redirected to our new site.  Please update your bookmarks";
     $this->messenger->addMessage($message);
-    return new RedirectResponse("/");
+    return new RedirectResponse("/albert-einstein-digital-collection");
   }
 }
