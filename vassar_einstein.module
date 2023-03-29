@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Contains vassar_einstein.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function vassar_einstein_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.vassar_einstein':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Agile Customizations') . '</p>';
+      return $output;
+
+    default:
+  }
+}

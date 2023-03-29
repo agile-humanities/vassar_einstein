@@ -1,0 +1,7 @@
+vassar_einstein.redirect_controller_redirect:
+  path: '/vassar/einstein/redirect'
+  defaults:
+    _controller: '\Drupal\vassar_einstein\Controller\RedirectController::einsteinRedirect'
+    _title: 'EinsteinRedirect'
+  requirements:
+    _permission: 'access content'
